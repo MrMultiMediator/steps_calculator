@@ -1,0 +1,50 @@
+I find my fitness activities under-represented in step counter documents, so I want to create my own conversions
+by creating mathematical relationships between MY activities and the other, more well-documented activities.
+
+First of all burpees.
+I do burpees at approximately 10 per minute, which is quite high exertion, probably on par with the following
+activities from this source: https://www.pehp.org/mango/pdf/pehp/pdc/step%20conversion%20chart_FFB805BB.pdf
+Bicycling, 15 mph vigorous: 222 steps/minute
+Rowing machine, vigourous: 189 steps/minute
+10 minute mile: 222 steps/minute
+Fitness class - high impact: 212 steps/minute
+Average: 211 steps per minute of burpess at 10 burpees per minute pace
+But let's DO 21.1 steps per burpee and just assume I'm always doing them at that rate and use the NUMBER of burpees as the input.
+
+
+Second of all yoga. Most source categorize yoga as a low-steps activity down there with other slow-paced,
+easy exercises. This is not correct. Yoga is nuanced and can be extremely difficult, even as difficult as
+burpees if you want it to be depending on which poses you're doing, how often and quickly you transition
+between poses, etc. So I am going to make three categories of yoga here related to how similar they are
+to other activities that are more well documented:
+Vigorous yoga: 200 steps / minute
+Intermediate yoga: 150 steps / minute
+Relaxing yoga: 100 steps / minute
+
+
+
+Other Activities Steps/ Minute
+Circuit training, general 178
+Cleaning house 78
+Fitness class – low impact 152
+Fitness class – high impact 212
+Gardening 131
+Hiking, general 172
+Hiking, uphill 212
+Jumping rope, moderate 244
+Jumping rope, slow 178
+Mopping 101
+Rowing machine, moderate 111
+Rowing machine, vigorous 189
+Running, 8 minute mile 278
+Running, 10 minute mile 222
+Running, 12 minute mile 178
+Shoveling snow 133
+Soccer, Recreational 156
+Stair climbing, leisurely 90
+Stair climbing, vigorous 267
+Tai chi 121
+Vacuuming 87
+Volleyball 89
+Weight lifting 133
+Yard work 111
