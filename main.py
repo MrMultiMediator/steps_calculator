@@ -21,7 +21,7 @@ def get_step_conversions() -> Dict[str, float]:
         "burpees": 21.1,
         "vigorous_yoga": 200.0,
         "intermediate_yoga": 150.0,
-        "relaxing_yoga": 100.0,
+        "relaxing_yoga": 90.0,
     }
     with open(ACTIVITIES_FILE, "r") as f:
         lines = f.readlines()
