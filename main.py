@@ -42,14 +42,21 @@ def format_activity_name(name: str) -> str:
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "step_conversions": STEP_CONVERSIONS, "format_activity_name": format_activity_name})
+    return templates.TemplateResponse(
+        request=request,
+        name="index.html",
+        context={
+            "step_conversions": STEP_CONVERSIONS,
+            "format_activity_name": format_activity_name,
+        },
+    )
 
 @app.post("/submit")
 async def submit(form_data: Request):
     form = await form_data.form()
     month = form.get("month")
     day = form.get("day")
-    date_str = f"2025-{month}-{day}"
+    date_str = f"2026-{month}-{day}"
 
     total_steps = 0
     activities = []
@@ -92,7 +99,7 @@ async def submit(form_data: Request):
 
 @app.get("/history", response_class=HTMLResponse)
 async def read_history(request: Request):
-    return templates.TemplateResponse("history.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="history.html")
 
 @app.get("/api/history")
 async def get_history_data():
@@ -106,7 +113,9 @@ async def get_history_data():
 
 @app.get("/day/{date}", response_class=HTMLResponse)
 async def read_day(request: Request, date: str):
-    return templates.TemplateResponse("day.html", {"request": request, "date": date})
+    return templates.TemplateResponse(
+        request=request, name="day.html", context={"date": date}
+    )
 
 @app.get("/api/day/{date}")
 async def get_day_data(date: str):
